@@ -18,3 +18,7 @@ external:
 ---
 
 ### [website](https://github.com/hengguan/GF-birthday/blob/main/index.html)
+
+*Backup girlfriend birthday website.*
+
+birthday date: 2021-04-18
