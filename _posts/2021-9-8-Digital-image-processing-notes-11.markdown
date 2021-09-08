@@ -23,6 +23,7 @@ external:
 - Geometric operations: change image geometry
 
 ![geometric operation example](/images/post-dip-11/geo_op_example.png)
+
 $\color{red}{*Examples*}$: translating, rotating, scaling an image
 
 **Definition**: Geometric operation transforms image $I$ to new image $I'$ by modifying coordinates of image pixels:
