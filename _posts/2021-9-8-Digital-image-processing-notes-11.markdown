@@ -24,7 +24,7 @@ external:
 
 ![geometric operation example](/images/post-dip-11/geo_op_example.png)
 
-$\color{red}{*Examples*}$: translating, rotating, scaling an image
+<font color=red size=4>*Examples*</font>: translating, rotating, scaling an image
 
 **Definition**: Geometric operation transforms image $I$ to new image $I'$ by modifying coordinates of image pixels:
 
@@ -41,25 +41,33 @@ Intensity value originally at (x,y) moved to new position (x’,y’)
 
 $$\left\{ \begin{matrix} 1 & 0 & d_x\\ 0 & 1 & d_y \end{matrix} \right\}$$
 
+<div align=center>
 ![translation](/images/post-dip-11/translation.png)
+</div>
 
 * **scaling**:(contracting or stretching)
 
 $$\left\{ \begin{matrix} s_x & 0 & 0\\ 0 & s_y & 0 \end{matrix} \right\}$$
 
+<div align=center>
 ![translation](/images/post-dip-11/scaling.png)
+</div>
 
 * **shearing**:
 
 $$\left\{ \begin{matrix} 1 & b_x & 0\\ b_y & 1 & 0 \end{matrix} \right\}$$
 
+<div align=center>
 ![translation](/images/post-dip-11/shearing.png)
+</div>
 
 * **rotation**:
 
 $$\left\{ \begin{matrix} \cos{\alpha} & -\sin{\alpha} & 0\\ \sin{\alpha} & \cos{\alpha} & 0 \end{matrix} \right\}$$
 
+<div align=center>
 ![translation](/images/post-dip-11/rotation.png)
+</div>
 
 * **flipping**:
   - To flip an image upside down:
@@ -72,8 +80,9 @@ $$\left\{ \begin{matrix} \cos{\alpha} & -\sin{\alpha} & 0\\ \sin{\alpha} & \cos{
   - For example: apply function on both texel coordinates (x, y)
 
   $$x=x+y*\sin(\pi*x)$$
-
+  <div align=center>
   ![warping](/images/post-dip-11/warping.png)
+  </div>
 
 * Affine (3‐Point) Mapping property
     - straight lines ‐> straight lines,
@@ -83,4 +92,6 @@ $$\left\{ \begin{matrix} \cos{\alpha} & -\sin{\alpha} & 0\\ \sin{\alpha} & \cos{
     - Distance ratio on lines do not change
 
 ### Non‐Linear Image Warps
+<div align=center>
 ![non-linear warp](/images/post-dip-11/non-linear-warp.png)
+</div>
