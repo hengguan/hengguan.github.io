@@ -1,0 +1,38 @@
+---
+layout: post
+title: "Digital Image Processing notes 10"
+date: '2021-09-26 11:16 +0100'
+author: Guan Heng
+tags:
+  - programming
+  - typescript
+  - tests
+description: >-
+  Digital Image Processing (CS/ECE 545) Lecture 10: Discrete Fourier Transform
+(DFT).
+# image: /images/lena512x512.jpg
+external:
+  title: "Digital Image Processing notes 10"
+  href: 
+  status: at Quantum Tensors Medium
+  date: 2021-9-26 11:16 +0100
+---
+
+## 1.Fourier Series Expansion
+- if $f(x)$ is *periodic function* of period 2T, then it's Fourier series expansion:
+![fourier-series-expansion](/images/post-dip-10/fourier-series-expansion.png)
+- $f(x)$ can be expressed in complex form as:
+
+$$
+f(x)=\sum_{n=-\infty}^{\infty}c_n\exp(\cos\frac{in\pi x}{T})dx
+$$
+where 
+$$
+c_n(x)=\frac{1}{2T}\int_{-T}^{T}f(x)\exp(\frac{-in\pi x}{T})dx
+$$
+
+- Fourier Series of Periodic Functions
+![](/images/post-dip-10/fourier-series-periodic.png)
+
+- Fourier integral - Fourier Series of non-Periodic Functions
+![](/images/post-dip-10/fourier-integral.png)
