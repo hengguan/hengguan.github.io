@@ -95,3 +95,42 @@ $$\left\{ \begin{matrix} \cos{\alpha} & -\sin{\alpha} & 0\\ \sin{\alpha} & \cos{
 <div align=center>
 ![non-linear warp](/images/post-dip-11/non-linear-warp.png)
 </div>
+
+* **twirl**:
+<div align=center>
+![non-linear warp](/images/post-dip-11/twirl.png)
+</div>
+
+* **ripple**:
+<div align=center>
+![non-linear warp](/images/post-dip-11/ripple.png)
+</div>
+
+* **Spherical Transformation**:
+<div align=center>
+![non-linear warp](/images/post-dip-11/spherical_trans.png)
+</div>
+
+---
+## 2.Template Matching
+Distance between image patterns
+  - sum of absolute differences:
+  $$ d_A(r,s)=\sum_{(i,j)\in{R}}|I(r+i,s+j)-R(i,j)|$$
+
+  - Maximum differences:
+  $$ d_M(r,s)=\max_{(i,j)\in{R}}|I(r+i,s+j)-R(i,j)|$$
+
+  - sum of squared differences(also called M-dimensional Euclidean distance):
+  $$ d_E(r,s)=[\sum_{(i,j)\in{R}}(I(r+i,s+j)-R(i,j))^2]^{\frac{1}{2}}$$
+
+  - **Best matching Distance and Correlation**:
+  <div align=center>
+  ![non-linear warp](/images/post-dip-11/dist_format.png)
+  </div>
+  B term is a constant, independent of r,s and can be ignored, A term is sum of squared valueds within subimage / at current offset r,s.
+  C(r,s)term is *linear cross correlation* between I and R defined as 
+  $$
+  (I\times{R})(r,s)=\sum_{i=-\infty}^{\infty}
+  $$
+
+
