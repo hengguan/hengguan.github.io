@@ -98,17 +98,17 @@ $$\left\{ \begin{matrix} \cos{\alpha} & -\sin{\alpha} & 0\\ \sin{\alpha} & \cos{
 
 * **twirl**:
 <div align=center>
-![non-linear warp](/images/post-dip-11/twirl.png)
+![twirl](/images/post-dip-11/twirl.png)
 </div>
 
 * **ripple**:
 <div align=center>
-![non-linear warp](/images/post-dip-11/ripple.png)
+![ripple](/images/post-dip-11/ripple.png)
 </div>
 
 * **Spherical Transformation**:
 <div align=center>
-![non-linear warp](/images/post-dip-11/spherical_trans.png)
+![spherical-transform](/images/post-dip-11/spherical_trans.png)
 </div>
 
 ---
@@ -125,7 +125,7 @@ Distance between image patterns
 
   - **Best matching Distance and Correlation**:
   <div align=center>
-  ![non-linear warp](/images/post-dip-11/dist_format.png)
+  ![best-matching-dist and corr](/images/post-dip-11/dist_format.png)
   </div>
   B term is a constant, independent of r,s and can be ignored, A term is sum of squared valueds within subimage / at current offset r,s.
   C(r,s)term is *linear cross correlation* between I and R defined as:
@@ -144,14 +144,14 @@ Distance between image patterns
   Min value of $d^2_E(r,s)$ corresponds to max value of $(I\times R)(r,s)$
 
   <div align=center>
-  ![non-linear warp](/images/post-dip-11/norm_cross_corr.png)
+  ![norm-scoss-corr](/images/post-dip-11/norm_cross_corr.png)
   </div>
 
   <div align=center>
-  ![non-linear warp](/images/post-dip-11/corr_coef.png)
+  ![corr-coef](/images/post-dip-11/corr_coef.png)
   </div>
 
   - Correlation coefficient Algorithm
   <div align=center>
-  ![non-linear warp](/images/post-dip-11/corr_coef_algorithm.png)
+  ![corr-coef-algorithm](/images/post-dip-11/corr_coef_algorithm.png)
   </div>
