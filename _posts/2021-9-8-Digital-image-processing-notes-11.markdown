@@ -128,9 +128,30 @@ Distance between image patterns
   ![non-linear warp](/images/post-dip-11/dist_format.png)
   </div>
   B term is a constant, independent of r,s and can be ignored, A term is sum of squared valueds within subimage / at current offset r,s.
-  C(r,s)term is *linear cross correlation* between I and R defined as 
+  C(r,s)term is *linear cross correlation* between I and R defined as:
+
   $$
-  (I\times{R})(r,s)=\sum_{i=-\infty}^{\infty}
+  (I \times{R})(r,s)=\sum_{i=-\infty}^{\infty}\sum_{j=-\infty}^{\infty}I(r+i,s+j)\cdot R(i,j)
   $$
 
+  Since R and I are assumed to be zero outside their boundaries:
+  
+  $$
+  \sum_{i=0}^{w_R-1}\sum_{j=0}^{h_R-1}I(r+i,s+j)\cdot R(i,j)=\sum_(i,j\in R)I(r+i,s+j)\cdot R(i,j)
+  $$
 
+  **Note:** Correlation is similar to linear convolution
+  Min value of $d^2_E(r,s)$ corresponds to max value of $(I\times R)(r,s)$
+
+  <div align=center>
+  ![non-linear warp](/images/post-dip-11/norm_cross_corr.png)
+  </div>
+
+  <div align=center>
+  ![non-linear warp](/images/post-dip-11/corr_coef.png)
+  </div>
+
+  - Correlation coefficient Algorithm
+  <div align=center>
+  ![non-linear warp](/images/post-dip-11/corr_coef_algorithm.png)
+  </div>
