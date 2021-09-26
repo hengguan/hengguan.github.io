@@ -42,7 +42,8 @@ Intensity value originally at (x,y) moved to new position (x’,y’)
 $$\left\{ \begin{matrix} 1 & 0 & d_x\\ 0 & 1 & d_y \end{matrix} \right\}$$
 
 <div align=center>
-![translation](/images/post-dip-11/translation.png)
+<!-- ![translation](/images/post-dip-11/translation.png) -->
+<img src="/images/post-dip-11/translation.png" width = 100%/>
 </div>
 
 * **scaling**:(contracting or stretching)
@@ -50,7 +51,8 @@ $$\left\{ \begin{matrix} 1 & 0 & d_x\\ 0 & 1 & d_y \end{matrix} \right\}$$
 $$\left\{ \begin{matrix} s_x & 0 & 0\\ 0 & s_y & 0 \end{matrix} \right\}$$
 
 <div align=center>
-![translation](/images/post-dip-11/scaling.png)
+<!-- ![translation](/images/post-dip-11/scaling.png) -->
+<img src="/images/post-dip-11/scaling.png" width = 100%/>
 </div>
 
 * **shearing**:
@@ -58,7 +60,8 @@ $$\left\{ \begin{matrix} s_x & 0 & 0\\ 0 & s_y & 0 \end{matrix} \right\}$$
 $$\left\{ \begin{matrix} 1 & b_x & 0\\ b_y & 1 & 0 \end{matrix} \right\}$$
 
 <div align=center>
-![translation](/images/post-dip-11/shearing.png)
+<!-- ![translation](/images/post-dip-11/shearing.png) -->
+<img src="/images/post-dip-11/shearing.png" width = 100%/>
 </div>
 
 * **rotation**:
@@ -66,7 +69,8 @@ $$\left\{ \begin{matrix} 1 & b_x & 0\\ b_y & 1 & 0 \end{matrix} \right\}$$
 $$\left\{ \begin{matrix} \cos{\alpha} & -\sin{\alpha} & 0\\ \sin{\alpha} & \cos{\alpha} & 0 \end{matrix} \right\}$$
 
 <div align=center>
-![translation](/images/post-dip-11/rotation.png)
+<!-- ![translation](/images/post-dip-11/rotation.png) -->
+<img src="/images/post-dip-11/rotation.png" width = 100%/>
 </div>
 
 * **flipping**:
@@ -81,7 +85,8 @@ $$\left\{ \begin{matrix} \cos{\alpha} & -\sin{\alpha} & 0\\ \sin{\alpha} & \cos{
 
   $$x=x+y*\sin(\pi*x)$$
   <div align=center>
-  ![warping](/images/post-dip-11/warping.png)
+  <!-- ![warping](/images/post-dip-11/warping.png) -->
+  <img src="/images/post-dip-11/warping.png" width = 100%/>
   </div>
 
 * Affine (3‐Point) Mapping property
@@ -93,20 +98,24 @@ $$\left\{ \begin{matrix} \cos{\alpha} & -\sin{\alpha} & 0\\ \sin{\alpha} & \cos{
 
 ### Non‐Linear Image Warps
 <div align=center>
-![non-linear warp](/images/post-dip-11/non-linear-warp.png)
+<!-- ![non-linear warp](/images/post-dip-11/non-linear-warp.png) -->
+<img src="/images/post-dip-11/non-linear-warp.png" width = 100%/>
 </div>
 
 * **twirl**:
+
 <div align=center>
 ![twirl](/images/post-dip-11/twirl.png)
 </div>
 
 * **ripple**:
+
 <div align=center>
 ![ripple](/images/post-dip-11/ripple.png)
 </div>
 
 * **Spherical Transformation**:
+
 <div align=center>
 ![spherical-transform](/images/post-dip-11/spherical_trans.png)
 </div>
@@ -124,9 +133,11 @@ Distance between image patterns
   $$ d_E(r,s)=[\sum_{(i,j)\in{R}}(I(r+i,s+j)-R(i,j))^2]^{\frac{1}{2}}$$
 
   - **Best matching Distance and Correlation**:
+
   <div align=center>
   ![best-matching-dist and corr](/images/post-dip-11/dist_format.png)
   </div>
+
   B term is a constant, independent of r,s and can be ignored, A term is sum of squared valueds within subimage / at current offset r,s.
   C(r,s)term is *linear cross correlation* between I and R defined as:
 
@@ -152,6 +163,7 @@ Distance between image patterns
   </div>
 
   - Correlation coefficient Algorithm
+  
   <div align=center>
   ![corr-coef-algorithm](/images/post-dip-11/corr_coef_algorithm.png)
   </div>
