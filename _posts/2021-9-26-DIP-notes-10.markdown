@@ -36,3 +36,27 @@ $$
 
 - Fourier integral - Fourier Series of non-Periodic Functions
 ![](/images/post-dip-10/fourier-integral.png)
+
+- Fourier Tansform
+![](/images/post-dip-10/fourier-trans.png)
+
+### Definition of 1D DFT
+- suppose
+$$
+f=[f_0,f_1,f_2,...,f_{N-1}]
+$$
+is a sequence of length N
+
+$$
+F=[F_0,F_1,F_2,...,F_{N-1}]
+$$
+where 
+$$
+F_u=\frac{1}{N}\sum_{x=0}^{N-1}exp[-2\pi i\frac{xu}{N}]f_x
+$$
+- **Interpretation:** basis functions completes x cycles over distance N
+- similar to fourier series expansion (compara with complex form of coefficients)
+$$
+c_n(x)=\frac{1}{2T}\int_{-T}{T}f(x)\exp(\frac{-in\pi x}{T})dx
+$$
+- instead of integral, we now have a finite sum.
