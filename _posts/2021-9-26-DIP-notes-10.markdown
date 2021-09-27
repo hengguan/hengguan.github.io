@@ -61,14 +61,18 @@ $$
 - instead of integral, we now have a finite sum.
 
 ### Inverse 1D DFT
-- formula for inverse
+- formula for inverse  
+
 $$
 x_u=\sum_{x=0}^{N-1}\exp[2\pi i\frac{xu}{N}]F_u
 $$
+
 where DFT equation
+
 $$
 F_u=\frac{1}{N}\sum_{x=0}^{N-1}\exp[-2\pi i\frac{xu}{N}]f_x
 $$
+
 - compared to DFT equation
     - the inverse has no scaling factor 1/N
     - the sign inside the square bracket has been changed to +ve
