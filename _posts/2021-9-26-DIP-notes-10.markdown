@@ -76,3 +76,28 @@ $$
 - compared to DFT equation
     - the inverse has no scaling factor 1/N
     - the sign inside the square bracket has been changed to +ve
+
+### Fast Fourier Transform(FFT)
+One FFT computation method:
+- Divides original vector into 2
+- calculates FFT of each half recursively
+- Merges result
+
+FFT computation Time savings:
+|$2^n$|Direct arithmetic|FFT|Increase in speed|
+|---:|:---:|:---:|---:|
+|4   | 16  |8    |2.0 |
+|8   |84   |24   |2.67|
+|... |     |     |    |
+|$2^n$|$2^{2n}$|$n2^n$|$2^n/n$|
+**note**:unit is multiplication
+
+### 2D DFT
+- thus if the matrix F is the Fourier Transformer of $f$, we can write:
+$$F=F(f)$$
+- the original matrix $f$ is the inverse Fourier Transform of F
+$$f=F^{-1}(F)$$
+
+**image can be thought of as 2D function $f$ that can be expressed as a sum ofa sines and cosines along 2 dimensions.**
+
+
