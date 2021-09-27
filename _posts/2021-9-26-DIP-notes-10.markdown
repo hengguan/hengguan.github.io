@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Digital Image Processing notes 10"
+title: "Digital Image Processing notes lecture10"
 date: '2021-09-26 11:16 +0100'
 author: Guan Heng
 tags:
@@ -8,11 +8,10 @@ tags:
   - typescript
   - tests
 description: >-
-  Digital Image Processing (CS/ECE 545) Lecture 10: Discrete Fourier Transform
-(DFT).
-# image: /images/lena512x512.jpg
+  Digital Image Processing (CS/ECE 545) Lecture 10: Discrete Fourier Transform(DFT).
+image: /images/lena512x512.jpg
 external:
-  title: "Digital Image Processing notes 10"
+  title: "Digital Image Processing notes lecture10"
   href: 
   status: at Quantum Tensors Medium
   date: 2021-9-26 11:16 +0100
